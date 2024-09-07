@@ -1,0 +1,175 @@
+
+
+#toggle-skills {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toggle-skills:hover {
+    background-color: #3e8e41;
+} 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #080707;
+    background-color: #ab9999;
+}
+
+  
+  .filter-frame:hover::before {
+    transform: scale(1.2); /* Scale the border on hover */
+  }
+  img {
+    width: 500px; 
+    height: 500px; 
+    object-fit: cover; 
+    border: none; 
+    border-radius: 20px
+    
+  }
+  
+  img::before {
+    content: "";
+     position: absolute; /* Add absolute positioning to the element */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 80px solid; /* Add a border to the element */
+    border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1; /* Rainbow-colored border */
+    animation: spin 3s linear infinite; /* Add the spinning animation */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .filter-frame:hover::before {
+    transform: scale(1.2); /* Scale the border on hover */
+  }
+  
+  /* Add animations */
+  
+  .filter-frame {
+    animation: pulse 2s infinite; /* Add a pulse animation */
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+header {
+    background-color: #333;
+    color: #f7f2f2;
+    padding: 1em;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    background-color: #aca2a2;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 0 10px #080707(20, 5, 5, 0.5);
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+button {
+    background-color: #110707;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0b345c;
+}
+
+/* Animations */
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Colors */
+
+.primary-color {
+    color: #333;
+}
+
+.secondary-color {
+    color: #666;
+}
+
+
+#milsetone3 {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #ab9999;
+  border-radius: 8px;
+  background-color: hwb(0 96% 1%);
+  box-shadow: #080707;
+
+}
+#milestone3 h2 {
+  color: #3e8e41;
+}
