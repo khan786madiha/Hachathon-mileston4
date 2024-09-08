@@ -20,42 +20,41 @@ function myFunction(): void {
   document.getElementById(`resumForm`)?.addEventListener(`submit` , function(event){
     event.preventDefault();
 
-    const textElement = document.getElementById(`text`) as HTMLInputElement
-    const emailElement = document.getElementById(`email`) as  HTMLInputElement
-    const passwordElement = document.getElementById(`password`) as HTMLInputElement
-    const numberElement = document.getElementById(`number`) as  HTMLInputElement
-    const dateElement = document.getElementById(`date`) as  HTMLInputElement
-    const colorElement = document.getElementById(`color`) as  HTMLInputElement
-    const rangeElement = document.getElementById(`range`) as  HTMLInputElement
-    const searchElement = document.getElementById(`search`) as  HTMLInputElement
-    const telElement = document.getElementById(`tel`) as  HTMLInputElement
-    const urlElement = document.getElementById(`url`) as  HTMLInputElement
+    const textElement = document.getElementById(`name`) as HTMLInputElement
+    const emailElement = document.getElementById(`email-input`) as  HTMLInputElement
+    const numberElement = document.getElementById(`number-input`) as  HTMLInputElement
+    const dateElement = document.getElementById(`date-input`) as  HTMLInputElement
+    const educationElement = document.getElementById(`education`) as  HTMLInputElement
+    const experienceElement = document.getElementById(`experience`) as  HTMLInputElement
+    const skillsElement = document.getElementById(`skills`) as  HTMLInputElement
 
-    if(textElement && emailElement && passwordElement && numberElement && dateElement && colorElement && rangeElement && searchElement && telElement && urlElement){
+    if(textElement && emailElement && numberElement && dateElement && educationElement && experienceElement&& skillsElement){
 
      const name = textElement.value;
       const email = emailElement.value;
-      const password = passwordElement.value;
       const number = numberElement.value;
       const date = dateElement.value
-      const color = colorElement.value
-      const  range = rangeElement.value
-      const tel = telElement.value
-      const url = urlElement.value
+      const education= educationElement.value
+      const  experience= experienceElement.value
+      const skills = skillsElement.value
+    
 
 
     const resumeOutput= `
     <h2>Resume</h2>
     <p><strong>Name:</strong> ${name} </p>
      <p><strong>Email:</strong> ${email} </p>
-      <p><strong>Pasword:</strong> ${password} </p>
-       <p><strong>Name:</strong> ${number} </p>
-        <p><strong>Name:</strong> ${date} </p>
-         <p><strong>Name:</strong> ${color} </p>
-          <p><strong>Name:</strong> ${range} </p>
-           <p><strong>Name:</strong> ${url} </p>
-           <p><strong>Telephone:</strong> ${tel} </p>
-      
+       <p><strong>Number:</strong> ${number} </p>
+        <p><strong>Date:</strong> ${date} </p>
+        <h3>
+
+         <h3>Education</h3>
+          <p>${education} </p>
+          <h3>Experience</h3>
+          <p>${experience} </p>
+          <h3>Skills</h3>
+          <p>${skills} </p>
+           ${experience} </p>
     `;
 
 
