@@ -28,15 +28,23 @@ nav .logo img {
     border-radius: 50%;
 }
 
+.navigation a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+.navigation a.active {
+    color: yellow; /* Active link color */
+    font-size: 18px; /* Increase size for active link */
+}
+
 
 nav .navigation {
     display: flex;
     gap: 40px;
-}
-
-.navigation a {
-    text-decoration: none;
-    color: white;
 }
 
 body {
