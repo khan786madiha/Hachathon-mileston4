@@ -1,4 +1,14 @@
 "use strict";
+// Get the current page URL
+const currentLocation = location.href;
+const menuItem = document.querySelectorAll('.navigation a');
+const menuLength = menuItem.length;
+
+for (let i = 0; i < menuLength; i++) {
+  if (menuItem[i].href === currentLocation) {
+    menuItem[i].className = "active"; // Add active class to the current link
+  }
+}
 var _a, _b, _c, _d;
 let profileImage = document.querySelector('.imgBox img');
 const resumeData = JSON.parse(localStorage.getItem("resumeData") || '{}');
