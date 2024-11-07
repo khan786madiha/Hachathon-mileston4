@@ -38,7 +38,7 @@ nav .logo img {
 
 .navigation a.active {
     color: yellow; /* Active link color */
-    font-size: 18px; /* Increase size for active link */
+    font-size: 20px; /* Increase size for active link */
 }
 
 
